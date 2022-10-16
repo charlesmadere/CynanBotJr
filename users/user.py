@@ -2,9 +2,10 @@ from datetime import tzinfo
 from typing import List
 
 import CynanBotCommon.utils as utils
+from CynanBotCommon.users.userInterface import UserInterface
 
 
-class User():
+class User(UserInterface):
 
     def __init__(
         self,

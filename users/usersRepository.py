@@ -7,11 +7,13 @@ import aiofiles
 import aiofiles.ospath
 import CynanBotCommon.utils as utils
 from CynanBotCommon.timeZoneRepository import TimeZoneRepository
+from CynanBotCommon.users.usersRepositoryInterface import \
+    UsersRepositoryInterface
 
 from users.user import User
 
 
-class UsersRepository():
+class UsersRepository(UsersRepositoryInterface):
 
     def __init__(
         self,
